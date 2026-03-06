@@ -12,12 +12,12 @@ def get_requirements(file_paths:str)->List[str]:
             requirements.remove(HYPEN_E_DOT)
     return requirements
 
+from setuptools import setup, find_packages
+
 setup(
-    name='mlproject',
-    version='0.0.1',
-    author="Nishit Khandhar",
-    author_email="nishitkhandhar26@gmail.com",
-    packages=find_packages(),
-    install_requires=['pandas','numpy','seaborn'],
-    insatll_requires=get_requirements('requirements.txt')
+    name="mlproject",
+    version="0.0.1",
+    author="Nishit",
+    packages=find_packages()
+    
 )
